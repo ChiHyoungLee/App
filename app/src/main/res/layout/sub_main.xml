@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+
+    >
+
+    <ImageButton
+        android:id="@+id/btnlogout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logout"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <!-- gravity는 세로로 중간 / layout_gravity는 가로로 중간-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/editText"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/newsearch1"
+            android:hint="키워드를 입력해주세요"
+            android:gravity="center"
+            android:textColorHint="@color/colorGreen"
+            android:textColor="@color/colorWhite"
+
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+
+        android:background="@drawable/xml_border"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="290dp"
+            android:layout_height="170dp"
+
+            android:choiceMode="singleChoice"
+            android:layout_weight="1"
+            android:divider="@color/colorWhite"
+            android:dividerHeight="1dp">
+
+        </ListView>
+
+    </LinearLayout>
+    <!-- choicemode 설정해야 선택기능 사용-->
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        >
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:onClick="mOnClick"
+            android:src="@drawable/add"
+            android:layout_weight="1"
+            android:layout_marginRight="25dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btnDel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:onClick="mOnClick"
+            android:layout_weight="1"
+            android:src="@drawable/deletev10" />
+
+    </LinearLayout>
+    //====================================================================
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_weight="1"
+        >
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:onClick="getList"
+            android:src="@drawable/savelist1"
+            android:layout_weight="1"
+            android:layout_marginRight="25dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btnSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:onClick="btnSetting"
+            android:layout_weight="1"
+            android:src="@drawable/trashv1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_weight="1"
+        >
+        <ImageButton
+            android:id="@+id/btnLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:onClick="btnLoad"
+            android:src="@drawable/loadlist"
+            android:layout_weight="1"
+            android:layout_marginRight="25dp"/>
+
+        <ImageButton
+            android:id="@+id/btnRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:layout_weight="1"
+
+            android:src="@drawable/run" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:background="#00000000"
+        android:text="Copyright by DOT"
+        android:textColor="@color/colorGreen"
+        />
+
+</LinearLayout>
